@@ -9,28 +9,15 @@
 <body>
 
 
-    <div id="app">
-        <ul>
-            <li>{{userEmail}}</li>
-            <li>{{userEmail}}</li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+    <div id="app" >
+        <div >
+
+            <ul>
+                <li v-for ="user in users"  >{{user}}</li>
+                
+            </ul>
+        </div>
     </div>
-
-
-
-
-
-
-
-
 
 
     <!-- Disable in production -->

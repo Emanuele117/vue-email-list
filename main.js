@@ -1,7 +1,9 @@
 const app = new Vue({
     el: '#app',
     data: {
-        userEmail: ''
+        users: [
+
+        ]
     },
     mounted() {
 
@@ -11,7 +13,7 @@ const app = new Vue({
                 .get('https://flynn.boolean.careers/exercises/api/random/mail')
                 .then(resp => {
                     console.log(resp.data.response);
-                    this.userEmail = (resp.data.response)
+                    this.users.push(resp.data.response)
                 })
 
         }
